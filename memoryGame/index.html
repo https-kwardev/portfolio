@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory Game</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="gamebody">
+		<h2> <i>LEVEL <i id="level">1</i></i></h2>
+		<h3>Score: <span id="result">0</span></h3>
+		<h3>Chances: <span id="chances">3</span></h3>
+		<div class="grid">
+			
+		</div>
+
+		<div class="start-prompt " id="startprompt">
+			<div start-prompt-txt></div>
+			<button  class="btn" type="button" id="start-btn">Start Game</button>
+		</div>
+		<button class="btn" onclick="location.reload()">Restart Game</button>
+		<div class="win-msg " id="winMsg">
+			<div data-win-msg-txt></div>
+			<button id="nxtLevelBtn" >Next level?</button>
+		</div>
+	</div>
+</body>
+</html>
