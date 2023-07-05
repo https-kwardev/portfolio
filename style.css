@@ -3,7 +3,7 @@ body {
     margin: 0px;
     padding: 0px;
     /*background-color: #161616;*/
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;;
 }
 
 ul {
@@ -43,9 +43,9 @@ a {
     background-color: #ffffff;
     position: relative;
     /*background-image: url("./images/about-model.jpg");*/
-    background-image: url("./images/backgroundpic.jpg");
+    background-image: url("./images/pexels-88.jpg");
     background-repeat: no-repeat;
-    background-size: 95% 95%;
+    background-size: 100% 100%;
     background-position: right bottom;
     box-shadow: 2px 12px 13px rgba(0, 0, 0, 0.4);
     box-shadow: 2px 12px 13px rgba(226, 223, 223, 0.4);
@@ -54,33 +54,46 @@ a {
 }
 
 nav {
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
-    font-family: calibri;
-    position: fixed;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
     top: 0;
     left: 0;
+    height: 60px;
     width: 100%;
     box-sizing: border-box;
     padding: 5px 50px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    background-color: transparent;
     z-index: 1;
 }
 
 .menu {
     display: flex;
 }
+.menu li{
+    background-image: url("./images/button.png");
+    background-size: 100% 100%;
+    background-color: white;
+    margin: 3px;
+    padding: 0%;
+    mix-blend-mode: color-burn;
+    
+}
 
+.menu img{
+    mix-blend-mode: color-burn;
+}
 .object {
     height: 1200px;
     width: 1200px;
     position: absolute;
-    background-color: #023E8A;
+    background-color: transparent;
     border-radius: 50%;
     left: 0%;
     top: 15%;
@@ -91,10 +104,10 @@ nav {
 }
 
 .objwhite {
-    height: 1200px;
-    width: 1200px;
+    height: 1400px;
+    width: 1400px;
     position: absolute;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     left: 0%;
     top: 15%;
@@ -380,9 +393,9 @@ nav {
 
 .menu li a {
     padding: 10px 15px;
-    color: #0096c7;
-    font-size: 13px;
-    font-family: poppins;
+    color: #FF5400;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .lang {
@@ -391,11 +404,9 @@ nav {
 
 .logo {
     left: 100%;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     color: #FF5400;
-    font-family: poppins;
-    font-family: Lucida handwriting;
 }
 
 .menu li a:hover,
@@ -409,13 +420,12 @@ nav {
 }
 
 .myself {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 400px;
     position: absolute;
-    left: 16%;
-    top: 35%;
-    transform: translate(-20%, -50%);
-    line-height: 1.5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .myself span {
@@ -424,10 +434,6 @@ nav {
     cursor: pointer;
 }
 
-.myself h1,
-span:hover {
-    animation: animate 0.5s linear !important;
-}
 
 .myself p:nth-child(1),
 .myself .details {
@@ -436,12 +442,81 @@ span:hover {
     font-size: 15px;
 }
 
+.wrap .txt{
+    display: inline-flex;
+}
+
+.wrap img{
+    right: 100%;
+}
+
+.wrap .dynamic-txt{
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    list-style: none;
+    font-size: 30px;
+    position: relative;
+    padding-top: 0px;
+    margin-bottom: 4px;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -148px;
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+    height: 33px;
+}
+
+.wrap ul{
+    padding-left: 1rem !important;
+    margin-bottom: 0 !important;
+
+}
+.wrap img {
+    position: fixed;
+    left: 100%;
+    transform: translate(-100%);
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: gray;
+    border-left: 3px solid #fff;
+    animation: typing 3s steps(22) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -12px 0 12px;
+    }
+}
+.myself .details {
+    background-color: gray;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
 .myself h1 {
-    font-family: poppins;
-    font-size: 25px;
+    font-size: 45px;
     margin: 0px;
     letter-spacing: 3px;
-    color: #FFFFFF;
+    color: #FF5400;
 }
 
 .cv-btn {
@@ -466,7 +541,7 @@ span:hover {
 
 .social {
     position: absolute;
-    left: 50px;
+    left: 80%;
     bottom: 50px;
     display: flex;
 }
@@ -477,11 +552,11 @@ span:hover {
 
 .social i {
     color: rgba(255, 255, 255, 0.4);
-    color: #fff;
+    color: #0077b6;
 }
 
 .social a:hover i {
-    color: rgba(216, 206, 60, 0.89);
+    color: #FF6D00;
     transition: all ease 0.5s;
 }
 
@@ -1046,21 +1121,21 @@ i {
 }
 
 .s-js {
-    width: 90%;
+    width: 60%;
     transition: 2s all;
     animation-duration: 2s;
     animation-name: js;
 }
 
 .s-react {
-    width: 60%;
+    width: 90%;
     transition: 2s all;
     animation-duration: 2s;
     animation-name: react;
 }
 
 .s-css {
-    width: 80%;
+    width: 95%;
     transition: 2s all;
     animation-duration: 2s;
     animation-name: css;
@@ -1089,7 +1164,7 @@ i {
         width: 0;
     }
     100% {
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -1098,7 +1173,7 @@ i {
         width: 0;
     }
     100% {
-        width: 60%;
+        width: 90%;
     }
 }
 
@@ -1107,7 +1182,7 @@ i {
         width: 0;
     }
     100% {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -1231,9 +1306,7 @@ i {
     transition: all ease 0.3s;
 }
 
-.sbox-text a:hover {
-    color: #023E8A;
-}
+
 
 
 /*---PORTFOLIO SECTION=========================================================================================-----*/
@@ -1549,16 +1622,20 @@ p {
 /*-------------RESPONSIVENESS=========================================================================================*/
 
 @media(max-width:1190px) {
+    nav{
+        letter-spacing: -1px;
+    }
+    
     .titles {
         display: none;
     }
     #mainsec {
-        background-size: 1150px;
+        background-size: 100% 100%;
     }
     .myself {
-        left: 10%;
+        left: 50%;
         top: 50%;
-        transform: translate(-10%, -50%);
+        transform: translate(-50%, -50%);
     }
     .about-model img {
         height: 400px;
@@ -1581,9 +1658,8 @@ p {
 }
 
 @media(max-width:970px) {
-    #mainsec {
-        background-image: none;
-        background-color: none !important;
+    nav{
+        height: 40px;
     }
     .myself {
         left: 50%;
@@ -1609,6 +1685,9 @@ p {
 }
 
 @media(max-width:900px) {
+    .myself{
+        width: 50%;
+    }
     .wdid-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
@@ -1712,6 +1791,10 @@ p {
 }
 
 @media(max-width:600px) {
+    #mainsec {
+        background-image: none;
+        background-color: none !important;
+    }
     #wdidsection {
         height: 400vh;
     }
@@ -1748,7 +1831,10 @@ p {
         margin: 0px 10%;
     }
     .myself {
-        width: 60%;
+        width: 80%;
+    }
+    .dynamic-txt li{
+        font-size: 23px;
     }
     .logo {
         font-size: 12px;
@@ -1789,12 +1875,16 @@ p {
         height: 250vh;
     }
     .object {
-        height: 1000px;
-        width: 1100px;
+        height: 900px;
+        width: 900px;
+        background-color: #023E8A;
         border-radius: 90%;
         left: 0%;
         top: 15%;
-        transform: translate(-60%, -55%);
+        transform: translate(-60%, -40%);
+        transition: 3s all;
+        animation-duration: 3s;
+        animation-name: animate-object;
     }
     #aboutsec {
         height: 130vh;
