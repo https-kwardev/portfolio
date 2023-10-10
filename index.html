@@ -24,16 +24,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,300;1,500;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
+    <style>
+        body {
+            margin: 0;
+            scroll-behavior:smooth;
+            overflow: scroll;
+        }
+
+        #background-video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            max-width: 100%;
+            max-height: 200vh;
+            z-index: -1;
+        }
+    </style>
     <div id="preloader"></div>
+    
     <!---MAIN SECTION--------------------------------------------->
     <section id="mainsec">
+        <video id="background-video" autoplay muted >
+            <source src="back-ground.mp4" type="video/mp4"/>
+            <source src="back-ground.webm" type="video/webm"/>
+            <!-- Add more <source> elements for other video formats if needed poster="background-image.jpg"-->
+        </video>
         <nav>
-            <img class="show" src="images/logo-no-background.svg" width="100px" height="30px">
-            <img class="logo" src="images/logo-no-background.svg" width="100px" height="100%">
+            <!-- <img class="show" src="images/logo-no-background.svg" width="100px" height="30px">
+            <img class="logo" src="images/logo-no-background.svg" width="100px" height="100%"> -->
+            <div class="div"></div>
+            <div class="div"></div>
             <div class="toggle "></div>
             <ul class="menu " id="menu ">
                 <li><a href="# " class=" ">Home</a></li>
@@ -45,7 +69,7 @@
             </ul>
             <!----<a href="# " class="lang ">En</a>-->
         </nav>
-        <div class="objwhite"></div>
+        <!-- <div class="objwhite"></div>
         <div class="object "></div>
         <div class="tiny-obj tiny1"></div>
         <div class="tiny-obj tiny2"></div>
@@ -58,19 +82,18 @@
         <div class="tiny-obj tiny9"></div>
         <div class="tiny-obj tiny10"></div>
         <div class="tiny-obj tiny11"></div>
-        <div class="tiny-obj tiny12"></div>
+        <div class="tiny-obj tiny12"></div> -->
         <div class="myself">
-            <h1 style="font-family: 'League Spartan', sans-serif; color: #fff;">I'm
-                <font color="#FF5400" style="font-family: 'League Spartan', sans-serif; font-weight: 500; ">Kwanele Duma</font>
+            <h1 style="font-family: 'League Spartan', sans-serif; color: #fff;">
+                <font  style="font-family: 'League Spartan', sans-serif; font-weight: 900; ">Leave the Tech to me.</font>
             </h1>
-            <P style="color: #FF5400; font-weight: 400; font-style: italic; font-size: large;">University of Johannesburg</P>
             <div class="wrap">
                 <div style="font-size: 30px;" class="details txt">
                     <ul class="dynamic-txt">
                         <li><span>Full-stack Developer</span></li>
                         <li><span>Systems Analyst</span></li>
                         <li><span>Freelencer</span></li>
-                        <li><span>Dev Tutor</span></li>
+                        <li><span>Data mining</span></li>
                     </ul>
                     <img src="images/icons8-search-64.png" style="height: 40px;" alt="">
                 
@@ -78,8 +101,8 @@
                 
             </div>
             
-            <a href="# " class="cv-btn ">Download CV</a>
-        </div>
+            <!-- <a href="# " class="cv-btn ">Download CV</a> -->
+        </div> 
         
 
         <div class="social ">
@@ -462,13 +485,15 @@
             <!----------pbox 1---------------------------->
             <div class="pbox ">
                 <div class="text-overlay">
-                    <h1>Client Projects</h1>
-                    <p></p>
-                    <p> ~ E-commerce site</p>
-                    <p> ~ multiple browser extentions</p>
-                    <p> ~ Database for a creche</p>
+                    <h1>Techno Space</h1>
+                    <a href="#">
+                        <p>Team Project</p>
+                        <p>
+                            A recruitment platform for hiring software developers. 
+                        </p>
+                    </a>
                 </div>
-                <img src="images/p4.webp" alt="portfolio">
+                <img src="tspace-screenshot.png" alt="portfolio">
             </div>
             <!----------pbox 2---------------------------->
             <div class="pbox ">
